@@ -4,11 +4,12 @@ import com.news.movieshower.domain.model.ResultDomainModel
 import com.news.movieshower.presentation.model.MoviePresentationModel
 import java.time.LocalDate
 import java.time.format.DateTimeFormatter
+import java.util.Locale
 
 fun ResultDomainModel.toPresentation() = MoviePresentationModel(
     imageUrl = this.posterPath,
     title = this.title,
-    voteAverage = this.voteAverage.toString().take(3),
+    voteAverage = String.format(Locale.getDefault(),"%.1f", this.voteAverage),
     releaseDate = formatDate(this.releaseDate),
     overview = this.overview
 )
