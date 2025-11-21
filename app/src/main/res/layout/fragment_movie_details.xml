@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.movie_details.MovieDetailsFragment">
+
+
+    <Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:navigationIcon="@drawable/ic_arrow_back"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/toolbar"/>
+
+    <ImageView
+        android:id="@+id/poster_iv"
+        android:layout_width="match_parent"
+        android:layout_height="352dp"
+        android:contentDescription="@null"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        android:scaleType="centerCrop"/>
+
+    <TextView
+        android:id="@+id/title_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="28sp"
+        android:text="Title"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/poster_iv" />
+
+    <TextView
+        android:id="@+id/rating_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rating"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="@+id/title_tv"
+        app:layout_constraintTop_toBottomOf="@+id/title_tv" />
+
+    <TextView
+        android:id="@+id/release_date_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Release"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="@+id/rating_tv"
+        app:layout_constraintTop_toBottomOf="@+id/rating_tv" />
+
+    <TextView
+        android:id="@+id/overview_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="Overview"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/release_date_tv"
+        app:layout_constraintTop_toBottomOf="@+id/release_date_tv" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

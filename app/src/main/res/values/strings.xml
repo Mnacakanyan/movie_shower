@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Movie Shower</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="error_http_exception">Error. Try again later</string>
+    <string name="no_internet_connection">No internet connection.</string>
+    <string name="error_unknown">Unknown error</string>
+    <string name="empty_list">Movies list is empty.</string>
+    <string name="rating">Rating: %s</string>
+    <string name="release_date">Release date: %s</string>
+</resources>
