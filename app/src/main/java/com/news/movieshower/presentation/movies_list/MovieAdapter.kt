@@ -83,7 +83,8 @@ class MovieAdapter(
 
             Glide.with(binding.movieIv)
                 .load("https://image.tmdb.org/t/p/w500${item.imageUrl}")
-                .diskCacheStrategy(DiskCacheStrategy.RESOURCE)
+                .diskCacheStrategy(DiskCacheStrategy.AUTOMATIC)
+                .skipMemoryCache(false)
                 .transform(CenterCrop(), RoundedCorners(32))
                 .into(binding.movieIv)
 
